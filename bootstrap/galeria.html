@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galería completa de autos deportivos premium. Explora Ferrari, Lamborghini, Porsche y más modelos icónicos.">
+    <meta name="keywords" content="galería autos deportivos, supercars, Ferrari, Lamborghini, Porsche">
+    <meta name="author" content="Velocity Luxe">
+    <title>Galería - Velocity Luxe</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-car"></i> Velocity Luxe
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="modelos.html">Modelos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca.html">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Galería -->
+    <section id="galeria" class="py-5" style="padding-top: 100px;">
+        <div class="container">
+            <h2 class="text-center mb-5">Galería de Autos Deportivos</h2>
+            <p class="text-center mb-5">Explora nuestra colección exclusiva de los autos deportivos más icónicos del mundo. Cada modelo representa la cúspide de la ingeniería y el diseño automotriz.</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/ferrari.jpg" class="card-img-top" alt="Ferrari">
+                        <div class="card-body">
+                            <h5 class="card-title">Ferrari</h5>
+                            <p class="card-text">El símbolo de la velocidad y el lujo italiano.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ferrariModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/lamborghini.jpg" class="card-img-top" alt="Lamborghini">
+                        <div class="card-body">
+                            <h5 class="card-title">Lamborghini</h5>
+                            <p class="card-text">Diseño agresivo y rendimiento excepcional.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lamboModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/porsche.jpg" class="card-img-top" alt="Porsche">
+                        <div class="card-body">
+                            <h5 class="card-title">Porsche</h5>
+                            <p class="card-text">Ingeniería alemana de precisión y elegancia.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#porscheModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/mclaren.jpg" class="card-img-top" alt="McLaren">
+                        <div class="card-body">
+                            <h5 class="card-title">McLaren</h5>
+                            <p class="card-text">Tecnología de Fórmula 1 en la calle.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mclarenModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/audi-r8.jpg" class="card-img-top" alt="Audi R8">
+                        <div class="card-body">
+                            <h5 class="card-title">Audi R8</h5>
+                            <p class="card-text">Quattro y tracción total alemana.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#audiModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/Bugatti-Chiron.jpg" class="card-img-top" alt="Bugatti Chiron">
+                        <div class="card-body">
+                            <h5 class="card-title">Bugatti Chiron</h5>
+                            <p class="card-text">El hiperdeportivo más rápido del mundo.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bugattiModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/koenigsegg.jpg" class="card-img-top" alt="Koenigsegg">
+                        <div class="card-body">
+                            <h5 class="card-title">Koenigsegg</h5>
+                            <p class="card-text">Innovación sueca en hiperdeportivos.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#koenigseggModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/pagani.jpg" class="card-img-top" alt="Pagani">
+                        <div class="card-body">
+                            <h5 class="card-title">Pagani</h5>
+                            <p class="card-text">Arte italiano en forma de automóvil.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paganiModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/aston-martin.jpg" class="card-img-top" alt="Aston Martin">
+                        <div class="card-body">
+                            <h5 class="card-title">Aston Martin</h5>
+                            <p class="card-text">Elegancia británica y rendimiento superior.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#astonModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/mercedes-amg.jpg" class="card-img-top" alt="Mercedes AMG">
+                        <div class="card-body">
+                            <h5 class="card-title">Mercedes AMG</h5>
+                            <p class="card-text">Potencia alemana con lujo incomparable.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mercedesModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/bmw-m.jpg" class="card-img-top" alt="BMW M">
+                        <div class="card-body">
+                            <h5 class="card-title">BMW M</h5>
+                            <p class="card-text">Manejo preciso y tecnología bávara.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bmwModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/ford-mustang.jpg" class="card-img-top" alt="Ford Mustang">
+                        <div class="card-body">
+                            <h5 class="card-title">Ford Mustang</h5>
+                            <p class="card-text">El muscle car americano por excelencia.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fordModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modales -->
+    <div class="modal fade" id="ferrariModal" tabindex="-1" aria-labelledby="ferrariModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ferrariModalLabel">Ferrari 488</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/ferrari-modal.jpg" class="img-fluid mb-3" alt="Ferrari 488">
+                    <p>El Ferrari 488 es un automóvil superdeportivo de motor central-trasero montado longitudinalmente y de tracción trasera, con un motor V8 biturbo de 3.9 litros que produce 670 CV. Acelera de 0 a 100 km/h en 3.0 segundos y alcanza una velocidad máxima de 330 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> V8 3.9L Twin-Turbo<br>
+                            <strong>Potencia:</strong> 670 CV<br>
+                            <strong>0-100 km/h:</strong> 3.0s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 330 km/h<br>
+                            <strong>Tracción:</strong> Trasera<br>
+                            <strong>Peso:</strong> 1,370 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Agregar modales para los nuevos autos -->
+    <div class="modal fade" id="koenigseggModal" tabindex="-1" aria-labelledby="koenigseggModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="koenigseggModalLabel">Koenigsegg Jesko</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/koenigsegg-modal.jpg" class="img-fluid mb-3" alt="Koenigsegg Jesko">
+                    <p>El Koenigsegg Jesko es un hiperdeportivo sueco con motor V8 biturbo de 5.0 litros que produce más de 1600 CV. Acelera de 0 a 100 km/h en 2.5 segundos y alcanza una velocidad máxima de 480 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> V8 5.0L Twin-Turbo<br>
+                            <strong>Potencia:</strong> 1,600+ CV<br>
+                            <strong>0-100 km/h:</strong> 2.5s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 480 km/h<br>
+                            <strong>Tracción:</strong> Trasera<br>
+                            <strong>Peso:</strong> 1,420 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="lamboModal" tabindex="-1" aria-labelledby="lamboModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lamboModalLabel">Lamborghini Huracan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/lamborghini-modal.jpg" class="img-fluid mb-3" alt="Lamborghini Huracan">
+                    <p>El Lamborghini Huracan es un superdeportivo con motor V10 atmosférico de 5.2 litros que produce 640 CV. Acelera de 0 a 100 km/h en 2.9 segundos y alcanza una velocidad máxima de 325 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> V10 5.2L<br>
+                            <strong>Potencia:</strong> 640 CV<br>
+                            <strong>0-100 km/h:</strong> 2.9s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 325 km/h<br>
+                            <strong>Tracción:</strong> Integral<br>
+                            <strong>Peso:</strong> 1,422 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="porscheModal" tabindex="-1" aria-labelledby="porscheModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="porscheModalLabel">Porsche 911</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/porsche-modal.jpg" class="img-fluid mb-3" alt="Porsche 911">
+                    <p>El Porsche 911 es un ícono automotriz con motor bóxer de 6 cilindros opuestos. La versión Turbo S produce 650 CV con motor twin-turbo de 3.7 litros. Acelera de 0 a 100 km/h en 2.7 segundos y alcanza 330 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> Boxer 6 3.7L Twin-Turbo<br>
+                            <strong>Potencia:</strong> 650 CV<br>
+                            <strong>0-100 km/h:</strong> 2.7s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 330 km/h<br>
+                            <strong>Tracción:</strong> Integral<br>
+                            <strong>Peso:</strong> 1,645 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="mclarenModal" tabindex="-1" aria-labelledby="mclarenModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mclarenModalLabel">McLaren 720S</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/mclaren-modal.jpg" class="img-fluid mb-3" alt="McLaren 720S">
+                    <p>El McLaren 720S es un superdeportivo con motor V8 twin-turbo de 4.0 litros que produce 720 CV. Acelera de 0 a 100 km/h en 2.8 segundos y alcanza una velocidad máxima de 341 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> V8 4.0L Twin-Turbo<br>
+                            <strong>Potencia:</strong> 720 CV<br>
+                            <strong>0-100 km/h:</strong> 2.8s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 341 km/h<br>
+                            <strong>Tracción:</strong> Trasera<br>
+                            <strong>Peso:</strong> 1,283 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="audiModal" tabindex="-1" aria-labelledby="audiModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="audiModalLabel">Audi R8</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/audi-modal.jpg" class="img-fluid mb-3" alt="Audi R8">
+                    <p>El Audi R8 es un superdeportivo con motor V10 atmosférico de 5.2 litros que produce 620 CV. Acelera de 0 a 100 km/h en 3.1 segundos y alcanza una velocidad máxima de 330 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> V10 5.2L<br>
+                            <strong>Potencia:</strong> 620 CV<br>
+                            <strong>0-100 km/h:</strong> 3.1s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 330 km/h<br>
+                            <strong>Tracción:</strong> Integral Quattro<br>
+                            <strong>Peso:</strong> 1,695 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="bugattiModal" tabindex="-1" aria-labelledby="bugattiModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bugattiModalLabel">Bugatti Chiron</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/bugatti-modal.jpg" class="img-fluid mb-3" alt="Bugatti Chiron">
+                    <p>El Bugatti Chiron es el hiperdeportivo más rápido del mundo con motor W16 quad-turbo de 8.0 litros que produce 1500 CV. Acelera de 0 a 100 km/h en 2.4 segundos y alcanza una velocidad máxima de 420 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> W16 8.0L Quad-Turbo<br>
+                            <strong>Potencia:</strong> 1,500 CV<br>
+                            <strong>0-100 km/h:</strong> 2.4s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 420 km/h<br>
+                            <strong>Tracción:</strong> Integral<br>
+                            <strong>Peso:</strong> 1,996 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="paganiModal" tabindex="-1" aria-labelledby="paganiModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="paganiModalLabel">Pagani Huayra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/pagani-modal.jpg" class="img-fluid mb-3" alt="Pagani Huayra">
+                    <p>El Pagani Huayra es una obra de arte automotriz con motor V12 twin-turbo AMG de 6.0 litros que produce 730 CV. Acelera de 0 a 100 km/h en 3.0 segundos y alcanza una velocidad máxima de 370 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> V12 6.0L Twin-Turbo<br>
+                            <strong>Potencia:</strong> 730 CV<br>
+                            <strong>0-100 km/h:</strong> 3.0s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 370 km/h<br>
+                            <strong>Tracción:</strong> Trasera<br>
+                            <strong>Peso:</strong> 1,350 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="astonModal" tabindex="-1" aria-labelledby="astonModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="astonModalLabel">Aston Martin DBS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/aston-martin-modal.jpg" class="img-fluid mb-3" alt="Aston Martin DBS">
+                    <p>El Aston Martin DBS Superleggera es un gran turismo con motor V12 twin-turbo de 5.2 litros que produce 725 CV. Acelera de 0 a 100 km/h en 3.4 segundos y alcanza una velocidad máxima de 340 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> V12 5.2L Twin-Turbo<br>
+                            <strong>Potencia:</strong> 725 CV<br>
+                            <strong>0-100 km/h:</strong> 3.4s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 340 km/h<br>
+                            <strong>Tracción:</strong> Trasera<br>
+                            <strong>Peso:</strong> 1,693 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="mercedesModal" tabindex="-1" aria-labelledby="mercedesModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mercedesModalLabel">Mercedes AMG GT</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/mercedes-amg-modal.jpg" class="img-fluid mb-3" alt="Mercedes AMG GT">
+                    <p>El Mercedes AMG GT es un superdeportivo con motor V8 twin-turbo de 4.0 litros que produce 730 CV. Acelera de 0 a 100 km/h en 3.2 segundos y alcanza una velocidad máxima de 325 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> V8 4.0L Twin-Turbo<br>
+                            <strong>Potencia:</strong> 730 CV<br>
+                            <strong>0-100 km/h:</strong> 3.2s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 325 km/h<br>
+                            <strong>Tracción:</strong> Trasera<br>
+                            <strong>Peso:</strong> 1,540 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="bmwModal" tabindex="-1" aria-labelledby="bmwModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bmwModalLabel">BMW M8</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/bmw-m-modal.jpg" class="img-fluid mb-3" alt="BMW M8">
+                    <p>El BMW M8 Competition es un gran turismo de alto rendimiento con motor V8 twin-turbo de 4.4 litros que produce 625 CV. Acelera de 0 a 100 km/h en 3.2 segundos y alcanza una velocidad máxima de 305 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> V8 4.4L Twin-Turbo<br>
+                            <strong>Potencia:</strong> 625 CV<br>
+                            <strong>0-100 km/h:</strong> 3.2s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 305 km/h<br>
+                            <strong>Tracción:</strong> Integral xDrive<br>
+                            <strong>Peso:</strong> 1,970 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="fordModal" tabindex="-1" aria-labelledby="fordModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="fordModalLabel">Ford Mustang Shelby GT500</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/ford-mustang-modal.jpg" class="img-fluid mb-3" alt="Ford Mustang Shelby GT500">
+                    <p>El Ford Mustang Shelby GT500 es un muscle car americano con motor V8 supercargado de 5.2 litros que produce 760 CV. Acelera de 0 a 100 km/h en 3.5 segundos y alcanza una velocidad máxima de 295 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> V8 5.2L Supercargado<br>
+                            <strong>Potencia:</strong> 760 CV<br>
+                            <strong>0-100 km/h:</strong> 3.5s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 295 km/h<br>
+                            <strong>Tracción:</strong> Trasera<br>
+                            <strong>Peso:</strong> 1,700 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2026 Velocity Luxe. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+</body>
+</html>

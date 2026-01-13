@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre la colección más exclusiva de autos deportivos del mundo. Galerías, modelos y testimonios de los vehículos más icónicos.">
+    <meta name="keywords" content="autos deportivos, Ferrari, Lamborghini, Porsche, supercars, hiperdeportivos">
+    <meta name="author" content="Velocity Luxe">
+    <title>Velocity Luxe - Autos Deportivos Premium</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-car"></i> Velocity Luxe
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="modelos.html">Modelos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca.html">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../Image/ferrari-hero.jpg" class="d-block w-100" alt="Ferrari 488">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ferrari 488</h5>
+                        <p>Velocidad y elegancia italiana.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Image/lamborghini-hero.jpg" class="d-block w-100" alt="Lamborghini Huracan">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lamborghini Huracan</h5>
+                        <p>Diseño agresivo y potencia extrema.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Image/porsche-hero.jpg" class="d-block w-100" alt="Porsche 911">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Porsche 911</h5>
+                        <p>Ingeniería de precisión alemana.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="hero-overlay text-white text-center py-5" style="background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7)); padding-top: 80px;">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Bienvenido a Velocity Luxe</h1>
+                <p class="lead mb-4">Descubre la emoción y la velocidad de los autos deportivos más icónicos del mundo. Una colección exclusiva de supercars y hiperdeportivos que despiertan la pasión por la velocidad.</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="galeria.html" class="btn btn-light btn-lg px-4 shadow-lg">
+                        <i class="fas fa-images me-2"></i>Ver Galería
+                    </a>
+                    <a href="modelos.html" class="btn btn-danger btn-lg px-4 shadow-lg">
+                        <i class="fas fa-car me-2"></i>Ver Modelos
+                    </a>
+                    <a href="contacto.html" class="btn btn-outline-light btn-lg px-4 shadow-lg">
+                        <i class="fas fa-envelope me-2"></i>Contáctanos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-tachometer-alt fa-3x text-primary"></i>
+                    </div>
+                    <h4>Rendimiento Extremo</h4>
+                    <p>Autos con motores de alto rendimiento, desde V8 hasta W16, capaces de alcanzar velocidades superiores a 400 km/h.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-palette fa-3x text-primary"></i>
+                    </div>
+                    <h4>Diseño Exclusivo</h4>
+                    <p>Cada modelo representa la cúspide del diseño automotriz, combinando aerodinámica, elegancia y agresividad.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-cogs fa-3x text-primary"></i>
+                    </div>
+                    <h4>Tecnología Avanzada</h4>
+                    <p>Incorporan las últimas innovaciones en suspensión, tracción y sistemas de asistencia al conductor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Galería de Autos Deportivos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/ferrari.jpg" class="card-img-top" alt="Ferrari">
+                        <div class="card-body">
+                            <h5 class="card-title">Ferrari</h5>
+                            <p class="card-text">El símbolo de la velocidad y el lujo italiano.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ferrariModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/lamborghini.jpg" class="card-img-top" alt="Lamborghini">
+                        <div class="card-body">
+                            <h5 class="card-title">Lamborghini</h5>
+                            <p class="card-text">Diseño agresivo y rendimiento excepcional.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lamboModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/porsche.jpg" class="card-img-top" alt="Porsche">
+                        <div class="card-body">
+                            <h5 class="card-title">Porsche</h5>
+                            <p class="card-text">Ingeniería alemana de precisión y elegancia.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#porscheModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/mclaren.jpg" class="card-img-top" alt="McLaren">
+                        <div class="card-body">
+                            <h5 class="card-title">McLaren</h5>
+                            <p class="card-text">Tecnología de Fórmula 1 en la calle.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mclarenModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/audi-r8.jpg" class="card-img-top" alt="Audi R8">
+                        <div class="card-body">
+                            <h5 class="card-title">Audi R8</h5>
+                            <p class="card-text">Quattro y tracción total alemana.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#audiModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../Image/Bugatti-Chiron.jpg" class="card-img-top" alt="Bugatti Chiron">
+                        <div class="card-body">
+                            <h5 class="card-title">Bugatti Chiron</h5>
+                            <p class="card-text">El hiperdeportivo más rápido del mundo.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bugattiModal">Más Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="galeria.html" class="btn btn-outline-primary btn-lg">
+                    <i class="fas fa-plus me-2"></i>Ver Más Autos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modales -->
+    <div class="modal fade" id="ferrariModal" tabindex="-1" aria-labelledby="ferrariModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ferrariModalLabel">Ferrari 488</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/ferrari-modal.jpg" class="img-fluid mb-3" alt="Ferrari 488">
+                    <p>El Ferrari 488 es un automóvil superdeportivo de motor central-trasero montado longitudinalmente y de tracción trasera, con un motor V8 biturbo de 3.9 litros que produce 670 CV. Acelera de 0 a 100 km/h en 3.0 segundos y alcanza una velocidad máxima de 330 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> V8 3.9L Twin-Turbo<br>
+                            <strong>Potencia:</strong> 670 CV<br>
+                            <strong>0-100 km/h:</strong> 3.0s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 330 km/h<br>
+                            <strong>Tracción:</strong> Trasera<br>
+                            <strong>Peso:</strong> 1,370 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="lamboModal" tabindex="-1" aria-labelledby="lamboModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lamboModalLabel">Lamborghini Huracan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/lamborghini-modal.jpg" class="img-fluid mb-3" alt="Lamborghini Huracan">
+                    <p>El Lamborghini Huracán es un automóvil superdeportivo con motor V10 atmosférico de 5.2 litros que desarrolla 640 CV. Es conocido por su diseño agresivo y su rendimiento en pista. Acelera de 0 a 100 km/h en 3.2 segundos y alcanza una velocidad máxima de 325 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> V10 5.2L<br>
+                            <strong>Potencia:</strong> 640 CV<br>
+                            <strong>0-100 km/h:</strong> 3.2s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 325 km/h<br>
+                            <strong>Tracción:</strong> Trasera<br>
+                            <strong>Peso:</strong> 1,422 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="porscheModal" tabindex="-1" aria-labelledby="porscheModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="porscheModalLabel">Porsche 911</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/porsche-modal.jpg" class="img-fluid mb-3" alt="Porsche 911">
+                    <p>El Porsche 911 es un ícono de los autos deportivos, con motor bóxer de seis cilindros montado en la parte trasera. Ha evolucionado a lo largo de décadas manteniendo su esencia de alto rendimiento y precisión alemana. Acelera de 0 a 100 km/h en 4.0 segundos y alcanza velocidades superiores a 300 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> Boxer 6 cilindros<br>
+                            <strong>Potencia:</strong> 450-650 CV<br>
+                            <strong>0-100 km/h:</strong> 4.0s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 300+ km/h<br>
+                            <strong>Tracción:</strong> Trasera/AWD<br>
+                            <strong>Peso:</strong> 1,380-1,500 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="mclarenModal" tabindex="-1" aria-labelledby="mclarenModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mclarenModalLabel">McLaren 720S</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/mclaren-modal.jpg" class="img-fluid mb-3" alt="McLaren 720S">
+                    <p>El McLaren 720S cuenta con un motor V8 biturbo de 4.0 litros que produce 710 CV. Incorpora tecnología avanzada de la Fórmula 1 para un rendimiento excepcional. Acelera de 0 a 100 km/h en 2.9 segundos y alcanza una velocidad máxima de 341 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> V8 4.0L Twin-Turbo<br>
+                            <strong>Potencia:</strong> 710 CV<br>
+                            <strong>0-100 km/h:</strong> 2.9s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 341 km/h<br>
+                            <strong>Tracción:</strong> Trasera<br>
+                            <strong>Peso:</strong> 1,283 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="audiModal" tabindex="-1" aria-labelledby="audiModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="audiModalLabel">Audi R8</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/audi-modal.jpg" class="img-fluid mb-3" alt="Audi R8">
+                    <p>El Audi R8 es un superdeportivo con motor V10 atmosférico de 5.2 litros y tracción quattro. Combina lujo y rendimiento con tecnología Audi avanzada. Acelera de 0 a 100 km/h en 3.5 segundos y alcanza una velocidad máxima de 320 km/h.</p>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <strong>Motor:</strong> V10 5.2L<br>
+                            <strong>Potencia:</strong> 620 CV<br>
+                            <strong>0-100 km/h:</strong> 3.5s
+                        </div>
+                        <div class="col-6">
+                            <strong>Velocidad Máx:</strong> 320 km/h<br>
+                            <strong>Tracción:</strong> Quattro AWD<br>
+                            <strong>Peso:</strong> 1,695 kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="bugattiModal" tabindex="-1" aria-labelledby="bugattiModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bugattiModalLabel">Bugatti Chiron</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../Image/bugatti-modal.jpg" class="img-fluid mb-3" alt="Bugatti Chiron">
+                    <p>El Bugatti Chiron es el hiperdeportivo más rápido del mundo, con un motor W-16 quad-turbo de 8.0 litros que produce 1500 CV. Alcanza velocidades superiores a 400 km/h.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modelos Destacados -->
+    <section id="modelos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Modelos Destacados</h2>
+            <div class="accordion" id="modelosAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Ferrari 488 Spider
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#modelosAccordion">
+                        <div class="accordion-body">
+                            Convertible con techo retráctil, motor V8 biturbo de 670 CV, acelera de 0 a 100 km/h en 3 segundos.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Lamborghini Aventador
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#modelosAccordion">
+                        <div class="accordion-body">
+                            Motor V12 atmosférico de 6.5 litros con 700 CV, diseño icónico y sonido inconfundible.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Porsche 911 Turbo S
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#modelosAccordion">
+                        <div class="accordion-body">
+                            Versión turbo del 911 con 650 CV, tracción integral y suspensión adaptativa.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="modelos.html" class="btn btn-outline-primary btn-lg">
+                    <i class="fas fa-plus me-2"></i>Ver Más Modelos
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="acerca" class="bg-light py-5">
+        <div class="container">
+            <div class="row" style="display: flex; align-items: stretch;">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="../Image/acerca-de.jpg" class="rounded shadow" style="width: 100%; height: 100%; object-fit: cover;" alt="Ferrari Deportivo">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h2 class="mb-4">Acerca de Velocity Luxe</h2>
+                    <p>Los autos deportivos representan la cúspide de la ingeniería automotriz, combinando velocidad, diseño y tecnología avanzada. Desde los clásicos de los años 60 hasta los hiperdeportivos modernos, estos vehículos capturan la imaginación de entusiastas de todo el mundo.</p>
+                    <p>En Velocity Luxe, nos apasiona conectar a los entusiastas con las máquinas más extraordinarias, ofreciendo una experiencia única que va más allá de la posesión: es sobre vivir la adrenalina, el lujo y la innovación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Testimonios</h2>
+            <div id="testimoniosCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="text-center">
+                            <blockquote class="blockquote">
+                                <p>"Conducir un Ferrari es una experiencia inolvidable. La potencia y el sonido del motor te hacen sentir vivo."</p>
+                                <footer class="blockquote-footer">Juan Pérez, <cite title="Source Title">Entusiasta de Autos</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <blockquote class="blockquote">
+                                <p>"El Lamborghini Huracan combina belleza y rendimiento de manera perfecta. ¡Increíble!"</p>
+                                <footer class="blockquote-footer">María García, <cite title="Source Title">Coleccionista</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <blockquote class="blockquote">
+                                <p>"Porsche representa la excelencia en ingeniería. Cada modelo es una obra maestra."</p>
+                                <footer class="blockquote-footer">Carlos López, <cite title="Source Title">Piloto Amateur</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <blockquote class="blockquote">
+                                <p>"El McLaren 720S es pura adrenalina. La tecnología de F1 en la calle es asombrosa."</p>
+                                <footer class="blockquote-footer">Ana Rodríguez, <cite title="Source Title">Ingeniera Automotriz</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <blockquote class="blockquote">
+                                <p>"Bugatti Chiron: el rey de la velocidad. Una experiencia que supera todas las expectativas."</p>
+                                <footer class="blockquote-footer">Luis Martínez, <cite title="Source Title">Empresario</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <blockquote class="blockquote">
+                                <p>"Koenigsegg redefine lo que significa ser rápido. Innovación sueca en su máxima expresión."</p>
+                                <footer class="blockquote-footer">Sofia Hernández, <cite title="Source Title">Periodista Automotriz</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-car fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Venta de Autos Deportivos</h5>
+                            <p class="card-text">Encuentra el auto de tus sueños en nuestra exclusiva colección de supercars y hiperdeportivos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Mantenimiento Especializado</h5>
+                            <p class="card-text">Servicio técnico premium para mantener tu auto deportivo en perfectas condiciones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-calendar-alt fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Eventos Exclusivos</h5>
+                            <p class="card-text">Participa en track days, exposiciones y eventos VIP con los mejores autos del mundo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h2 class="mb-3">¿Listo para Vivir la Experiencia?</h2>
+            <p class="lead mb-4">Únete a la comunidad de entusiastas de los autos deportivos. Descubre más modelos y mantente actualizado con las últimas novedades.</p>
+            <a href="galeria.html" class="btn btn-light btn-lg me-3">
+                <i class="fas fa-car me-2"></i>Explorar Más Autos
+            </a>
+            <a href="contacto.html" class="btn btn-outline-light btn-lg">
+                <i class="fas fa-envelope me-2"></i>Contactar Ahora
+            </a>
+        </div>
+    </section>
+
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>Velocity Luxe</h5>
+                    <p>Tu destino premium para los autos deportivos más exclusivos del mundo. Descubre la pasión por la velocidad y el lujo automotriz.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Inicio</a></li>
+                        <li><a href="galeria.html" class="text-white">Galería</a></li>
+                        <li><a href="modelos.html" class="text-white">Modelos</a></li>
+                        <li><a href="acerca.html" class="text-white">Acerca de</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h5>Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Consultoría</a></li>
+                        <li><a href="#" class="text-white">Mantenimiento</a></li>
+                        <li><a href="#" class="text-white">Eventos</a></li>
+                        <li><a href="contacto.html" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Informacion</h5>
+                    <p>Suscríbete para recibir las últimas novedades sobre autos deportivos.</p>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="email" placeholder="Tu email">
+                        <button class="btn btn-primary" type="submit">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2026 Velocity Luxe. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Política de Privacidad</a>
+                    <a href="#" class="text-white">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+</body>
+</html>
